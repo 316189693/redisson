@@ -26,8 +26,7 @@ import org.slf4j.LoggerFactory;
 public class Will {
 
     private static final Logger log = LoggerFactory.getLogger(Version.class);
-    private static int amount =0;
-    public static fly () {
+    public static void fly () {
         System.out.println("show fly");
     }
     public static void logVersion() {
@@ -50,4 +49,7 @@ public class Will {
         }
     }
 
+    public static void main(String[] args) {
+        Will::fly();
+    }
 }
