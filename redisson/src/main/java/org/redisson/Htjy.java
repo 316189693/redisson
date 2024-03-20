@@ -23,10 +23,10 @@ import java.util.jar.Manifest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Version {
+public class Htjy {
 
     private static final Logger log = LoggerFactory.getLogger(Version.class);
-
+    private static int amount =0;
     public static void logVersion() {
         try {
             Enumeration<URL> resources = Version.class.getClassLoader().getResources("META-INF/MANIFEST.MF");
